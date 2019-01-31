@@ -1,5 +1,3 @@
-require "pry"
-
 class Application
 
 
@@ -8,9 +6,9 @@ class Application
     time = Time.new
 
     if time.hour < 12
-      binding.pry
       resp.write "Good Morning!"
-    else resp.write "Good Afternoon!"
+    else 
+      resp.write "Good Afternoon!"
     end
 
     resp.finish
